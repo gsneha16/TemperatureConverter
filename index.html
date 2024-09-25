@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temp. Converter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="outer_box">
+        <div class="heading">
+            <h1>TEMPERATURE CONVERTER</h1>
+        </div>
+        <div class="container">
+            <form>
+                <div id="input_box" class="box">
+                    <div >
+                        <h4>Enter Temperature</h4>
+                        <div class="inptval ipbox">
+                            <input type="number" value="0"> 
+                        </div>
+                    </div> 
+                    <div class="entry">
+                        <div>
+                            <h4>From</h4>
+                            <div class="inptval ipbox">
+                                <select name="indeg" class="input1" id="input_type">
+                                    <option value="Degree" selected>Degree</option>
+                                    <option value="Fahrenheit">Fahrenheit</option>
+                                    <option value="Kelvin">Kelvin</option>
+                                </select>
+                            </div>
+                        </div>
+                        <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                        <div>
+                            <h4>To</h4>
+                            <div class="convert_type ipbox" >
+                                <select name="outdeg" class="input1" id="conversion_type">
+                                    <option value="Fahrenheit" selected>Fahrenheit</option>
+                                    <option value="Degree">Degree</option>
+                                    <option value="Kelvin">Kelvin</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div> 
+                    <div>
+                        <button class="btn">Convert</button>
+                    </div> 
+                </div>
+            </form>   
+            <div id="result_box" class="box">
+                <p>32 Fahrenheit</p>
+            </div> 
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
